@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<style>
+body {
+ background-color: lightblue;
+ }
+ h2
+ {
+ color: white;
+ text-align: center
+ }
+ input[type=text], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ 
+ 
+</style>
+<body>
+<h2>EVENT REGISTRATION FORM</h2>
+ 
+<form name="myForm" method ="POST" action = "StudentServlet">
+   <label for="ename">Event Name:</label><br>
+   <input type="text" id="fname" name="ename" placeholder="Enter your name..." ><br><br><br>
+ 
+ <label for="event-date"> DATE :</label>
+ <input type="date" id="start" name="event-date" min="1900-01-01" max="2018-12-31"><br><br><br>
+ 
+ <label for="Location">Location:</label><br>
+ <input type="text" id="lname" name="Location" placeholder="Enter location..."><br><br>
+ Description:
+ <br><textarea name = "Description" rows="10" cols="43" placeholder="Enter event details..." ></textarea><br><br>
+ 
+ <input type="submit" value="Submit" id = "btnsubmit" onclick="validateForm()">
+ 
+</form>
+ 
+<br>
+<br>
+<h1 id="demo3"></h1>
+<h2 id="demo"></h2>
+<h2 id="demo1"></h2>
+<h2 id="demo2"></h2>
+ 
+</body>
+</html>
